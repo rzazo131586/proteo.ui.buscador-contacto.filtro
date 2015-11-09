@@ -24,7 +24,7 @@
         // Reset INPUTS & LIST constacts ( future : service )
         $scope.contactReset = function(){
         	// reasign data into contactsFiltered for reset list contacts
-			$scope.contactsFiltered = $scope.contacts;
+			$scope.contactsFiltered = undefined;
         }
 
         // Validate if Inputs are empty && search into result service compare with filter
@@ -35,7 +35,7 @@
 			{	
 				if ($scope.filter.username == undefined && $scope.filter.name == undefined && $scope.filter.company == undefined){
 					// no data in any input 
-					$scope.contactsFiltered = $scope.contacts;
+					$scope.contactReset();
 					return;
 				}else{
 					// validate its username like to name
