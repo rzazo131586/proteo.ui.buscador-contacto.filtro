@@ -36,7 +36,6 @@
 				if ($scope.filter.username == undefined && $scope.filter.name == undefined && $scope.filter.company == undefined){
 					// no data in any input 
 					$scope.contactsFiltered = $scope.contacts;
-       	 			console.log("contactsFiltered (1) || "+JSON.stringify($scope.contactsFiltered));
 					return;
 				}else{
 					// validate its username like to name
@@ -47,7 +46,6 @@
 						}
 				}
        	 	};
- 			console.log("contactsFiltered (2) || "+JSON.stringify($scope.contactsFiltered));
 		}
 	});
 
@@ -66,7 +64,7 @@
 	    templateUrl : 	'./bower_components/proteo.ui.buscador-contacto.filtro/dist/proteo.ui.buscador-contacto.filtro.tpl.html',
 	    link: function($scope){
 			$scope.returnItemsFilter = function(){
-				console.log("contactsFiltered || "+JSON.stringify($scope.contactsFiltered));
+				//console.log("contactsFiltered || "+JSON.stringify($scope.contactsFiltered));
 	       		$scope.contactsResult($scope.contactsFiltered);
 	 		};
 		}

@@ -27,7 +27,6 @@
 				if ($scope.filter.username == undefined && $scope.filter.name == undefined && $scope.filter.company == undefined){
 					// no data in any input 
 					$scope.contactsFiltered = $scope.contacts;
-       	 			console.log("contactsFiltered (1) || "+JSON.stringify($scope.contactsFiltered));
 					return;
 				}else{
 					// validate its username like to name
@@ -38,7 +37,6 @@
 						}
 				}
        	 	};
- 			console.log("contactsFiltered (2) || "+JSON.stringify($scope.contactsFiltered));
 		}
 	});
 
