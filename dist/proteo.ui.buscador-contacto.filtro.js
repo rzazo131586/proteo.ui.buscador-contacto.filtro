@@ -10,11 +10,11 @@
 (function () {
     'use strict';
 
-angular.module('proteo.ui.buscador-contacto.filtro').controller('buscadorContactoFiltroCtrl', function($scope) {
-	// Code fo Controller
-	$scope.filter={};
-	$scope.datatitle = "AGENDA DE CONTACTOS";
-});
+	angular.module('proteo.ui.buscador-contacto.filtro').controller('buscadorContactoFiltroCtrl', function($scope) {
+		// Code fo Controller
+		$scope.filter={};
+		$scope.datatitle = "AGENDA DE CONTACTOS";
+	});
 
 }());
 
@@ -42,15 +42,15 @@ angular.module('proteo.ui.buscador-contacto.filtro').controller('buscadorContact
 (function () {
     'use strict';
 
-angular.module('proteo.ui.buscador-contacto.filtro').service('filtroService', function () {
+	angular.module('proteo.ui.buscador-contacto.filtro').service('filtroService', function () {
 
-/*
-      this.getFullname = function(customer){return customer.firstName+ ' ' + customer.lastName;};
-  
-      this.basePath={};
-      this.setBasePath = function(path) {basePath=path;};
-      this.getBasePath = function() { return basePath;}
-      */
-  });
+	/*
+	      this.getFullname = function(customer){return customer.firstName+ ' ' + customer.lastName;};
+	  
+	      this.basePath={};
+	      this.setBasePath = function(path) {basePath=path;};
+	      this.getBasePath = function() { return basePath;}
+	      */
+	  });
 
 }());
