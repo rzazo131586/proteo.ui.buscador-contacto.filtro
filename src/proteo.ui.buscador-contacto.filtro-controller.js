@@ -19,7 +19,7 @@
         }
 
         // Validate if Inputs are empty && search into result service compare with filter
-        $scope.contactFiltered = function (){
+        $scope.contactFilteredFn = function (){
         	$scope.contactsFiltered = [];
 
         	for(var i = 0; i < $scope.contacts.length ; i++)
@@ -37,6 +37,7 @@
 						}
 				}
        	 	};
+       	 	return $scope.contactsFiltered;
 		}
 	});
 

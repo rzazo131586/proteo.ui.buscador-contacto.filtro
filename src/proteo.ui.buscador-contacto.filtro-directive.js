@@ -12,7 +12,7 @@
 	    link: function($scope){
 			$scope.returnItemsFilter = function(){
 				//console.log("contactsFiltered || "+JSON.stringify($scope.contactsFiltered));
-	       		$scope.contactsResult($scope.contactsFiltered);
+	       		$scope.contactsResult($scope.contactFilteredFn());
 	 		};
 		}
 	  };
