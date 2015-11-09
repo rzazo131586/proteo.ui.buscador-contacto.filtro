@@ -1,5 +1,5 @@
 <div class="buscador-personas-container">
-	<h4>Buscador de Contactos</h4>
+	<h4>{{ datatitle || uppercase }}</h4>
 	<div id="filterContact" class="form-group">
 		<div class="col-md-6">
 			<label class="control-label ng-scope">NickName</label>
@@ -16,7 +16,7 @@
 		</div>
 		<hr>
 		<div class="col-md-6 text-right">
-			<button type="button" class="btn btn-action" ng-click="contactFiltered()">Buscar</button>
+			<button type="button" class="btn btn-action" ng-click="returnItemsFilter()">Buscar</button>
 			<button type="button" class="btn btn-action" ng-click="contactReset()">Reset</button>
 		</div>
 	</div>
