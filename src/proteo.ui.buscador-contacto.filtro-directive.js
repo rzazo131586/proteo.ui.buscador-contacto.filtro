@@ -4,7 +4,7 @@
 	angular.module('proteo.ui.buscador-contacto.filtro').directive('buscadorContacto.filtro',function() {
 	  return {
 		scope: {
-			showContactsList : "="
+			contactsResult : "="
 		},	    
 		restrict	: 	"E",
 	    controller 	: 	'buscadorContactoFiltroCtrl',
@@ -12,7 +12,7 @@
 	    link: function($scope){
 			$scope.returnItemsFilter = function(){
 				console.log("contactsFiltered || "+JSON.stringify($scope.contactsFiltered));
-	       		$scope.showContactsList($scope.contactsFiltered);
+	       		$scope.contactsResult($scope.contactsFiltered);
 	 		};
 		}
 	  };
