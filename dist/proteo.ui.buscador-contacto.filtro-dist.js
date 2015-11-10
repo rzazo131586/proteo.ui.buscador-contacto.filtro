@@ -98,3 +98,54 @@
 
 }());
 /* END Buscador-Contacto.FILTRO SERVICE */
+
+angular.module('proteo.ui.buscador-contacto.visor').run(['$templateCache', function($templateCache) {
+  'use strict';
+
+  $templateCache.put('src/proteo.ui.buscador-contacto.filtro.tpl.html',
+    "<div class=\"buscador-personas-container\">\r" +
+    "\n" +
+    "\t<h4>{{ datatitle || uppercase }}</h4>\r" +
+    "\n" +
+    "\t<div id=\"filterContact\" class=\"form-group\">\r" +
+    "\n" +
+    "\t\t<div class=\"col-md-6\">\r" +
+    "\n" +
+    "\t\t\t<label class=\"control-label ng-scope\">Username</label>\r" +
+    "\n" +
+    "\t        <input class=\"form-control ng-pristine ng-untouched ng-valid ng-scope\" type=\"text\" name=\"username\" ng-model=\"filter.username\">\t\t\t\r" +
+    "\n" +
+    "\t\t</div>\r" +
+    "\n" +
+    "\t\t<div class=\"col-md-6\">\r" +
+    "\n" +
+    "\t\t\t<label class=\"control-label ng-scope\">Name Lastname</label>\r" +
+    "\n" +
+    "\t        <input class=\"form-control ng-pristine ng-untouched ng-valid ng-scope\" type=\"text\" name=\"name\" ng-model=\"filter.name\" required>\r" +
+    "\n" +
+    "\t\t</div>\r" +
+    "\n" +
+    "\t\t<div class=\"col-md-6\">\r" +
+    "\n" +
+    "\t\t\t<label class=\"control-label ng-scope\">Company</label>\r" +
+    "\n" +
+    "\t        <input class=\"form-control ng-pristine ng-untouched ng-valid ng-scope\" type=\"text\" name=\"company\" ng-model=\"filter.company\" required>\r" +
+    "\n" +
+    "\t\t</div>\r" +
+    "\n" +
+    "\t\t<hr>\r" +
+    "\n" +
+    "\t\t<div class=\"col-md-6 text-right\">\r" +
+    "\n" +
+    "\t\t\t<button type=\"button\" class=\"btn btn-action\" ng-click=\"returnItemsFilter()\">Buscar</button>\r" +
+    "\n" +
+    "\t\t\t<button type=\"button\" class=\"btn btn-action\" ng-click=\"contactReset()\">Reset</button>\r" +
+    "\n" +
+    "\t\t</div>\r" +
+    "\n" +
+    "\t</div>\r" +
+    "\n" +
+    "</div>"
+  );
+
+}]);
