@@ -1,3 +1,4 @@
+/* Buscador-Contacto.FILTRO DIRECTIVE */
 (function () {
     'use strict';
 
@@ -19,3 +20,4 @@
 	});
 
 }());
+/* END Buscador-Contacto.FILTRO DIRECTIVE */

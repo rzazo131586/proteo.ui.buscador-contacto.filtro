@@ -1,3 +1,4 @@
+/* Buscador-Contacto.FILTRO MODULE */
 (function () {
 
     'use strict';	
@@ -7,6 +8,9 @@
 			// custom code 
 	}]);
 }());
+/* END Buscador-Contacto.FILTRO MODULE */
+
+/* Buscador-Contacto.FILTRO CONTROLLER */
 (function () {
     'use strict';
 
@@ -51,7 +55,9 @@
 	});
 
 }());
+/* END Buscador-Contacto.FILTRO CONTROLLER */
 
+/* Buscador-Contacto.FILTRO DIRECTIVE */
 (function () {
     'use strict';
 
@@ -73,6 +79,9 @@
 	});
 
 }());
+/* END Buscador-Contacto.FILTRO DIRECTIVE */
+
+/* Buscador-Contacto.FILTRO SERVICE */
 (function () {
     'use strict';
 
@@ -88,3 +97,4 @@
 	  });
 
 }());
+/* END Buscador-Contacto.FILTRO SERVICE */

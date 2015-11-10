@@ -1,3 +1,4 @@
+/* Buscador-Contacto.FILTRO SERVICE */
 (function () {
     'use strict';
 
@@ -13,3 +14,4 @@
 	  });
 
 }());
+/* END Buscador-Contacto.FILTRO SERVICE */
