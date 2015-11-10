@@ -68,7 +68,7 @@
 		},	    
 		restrict	: 	"E",
 	    controller 	: 	'buscadorContactoFiltroCtrl',
-	    templateUrl : 	'./bower_components/proteo.ui.buscador-contacto.filtro/dist/proteo.ui.buscador-contacto.filtro.tpl.html',
+	    templateUrl : 	'src/proteo.ui.buscador-contacto.filtro.tpl.html',
 	    link: function($scope){
 			$scope.returnItemsFilter = function(){
 				//console.log("contactsFiltered || "+JSON.stringify($scope.contactsFiltered));
