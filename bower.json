@@ -5,6 +5,7 @@
   "main": "./dist/index.js",
   "ignore": [
     "bower_components",
+    "styles",
     "config",
     "demo",
     "doc",
