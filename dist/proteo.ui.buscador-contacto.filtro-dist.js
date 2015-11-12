@@ -79,7 +79,7 @@
 	  });
 /* END Buscador-Contacto.FILTRO SERVICE */
 
-angular.module('proteo.ui.buscador-contacto.filtro').run(['$templateCache', function($templateCache) {
+angular.module('proteo.ui.buscador-contacto').run(['$templateCache', function($templateCache) {
   'use strict';
 
   $templateCache.put('src/proteo.ui.buscador-contacto.filtro.tpl.html',
