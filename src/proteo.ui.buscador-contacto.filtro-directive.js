@@ -1,7 +1,4 @@
 /* Buscador-Contacto.FILTRO DIRECTIVE */
-(function () {
-    'use strict';
-
 	angular.module('proteo.ui.buscador-contacto.filtro').directive('buscadorContacto.filtro',function() {
 	  return {
 		scope: {
@@ -18,6 +15,4 @@
 		}
 	  };
 	});
-
-}());
 /* END Buscador-Contacto.FILTRO DIRECTIVE */

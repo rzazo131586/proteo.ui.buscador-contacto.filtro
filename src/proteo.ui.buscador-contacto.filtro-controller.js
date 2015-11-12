@@ -1,7 +1,4 @@
 /* Buscador-Contacto.FILTRO CONTROLLER */
-(function () {
-    'use strict';
-
 	angular.module('proteo.ui.buscador-contacto.filtro').controller('buscadorContactoFiltroCtrl', function($scope, $http) {
 		// Code fo Controller
 		$scope.filter={};
@@ -41,6 +38,4 @@
        	 	return $scope.contactsFiltered;
 		}
 	});
-
-}());
 /* END Buscador-Contacto.FILTRO CONTROLLER */

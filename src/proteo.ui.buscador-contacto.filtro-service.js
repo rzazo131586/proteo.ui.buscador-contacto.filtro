@@ -1,7 +1,4 @@
 /* Buscador-Contacto.FILTRO SERVICE */
-(function () {
-    'use strict';
-
 	angular.module('proteo.ui.buscador-contacto.filtro').service('filtroService', function () {
 
 	/*
@@ -12,6 +9,4 @@
 	      this.getBasePath = function() { return basePath;}
 	      */
 	  });
-
-}());
 /* END Buscador-Contacto.FILTRO SERVICE */

@@ -1,19 +1,11 @@
 /* Buscador-Contacto.FILTRO MODULE */
-(function () {
-
-    'use strict';	
-
 	angular.module('proteo.ui.buscador-contacto.filtro',['pascalprecht.translate'])
 		.config(['$translateProvider', function ($translateProvider) {
 			// custom code 
 	}]);
-}());
 /* END Buscador-Contacto.FILTRO MODULE */
 
 /* Buscador-Contacto.FILTRO CONTROLLER */
-(function () {
-    'use strict';
-
 	angular.module('proteo.ui.buscador-contacto.filtro').controller('buscadorContactoFiltroCtrl', function($scope, $http) {
 		// Code fo Controller
 		$scope.filter={};
@@ -53,14 +45,9 @@
        	 	return $scope.contactsFiltered;
 		}
 	});
-
-}());
 /* END Buscador-Contacto.FILTRO CONTROLLER */
 
 /* Buscador-Contacto.FILTRO DIRECTIVE */
-(function () {
-    'use strict';
-
 	angular.module('proteo.ui.buscador-contacto.filtro').directive('buscadorContacto.filtro',function() {
 	  return {
 		scope: {
@@ -77,14 +64,9 @@
 		}
 	  };
 	});
-
-}());
 /* END Buscador-Contacto.FILTRO DIRECTIVE */
 
 /* Buscador-Contacto.FILTRO SERVICE */
-(function () {
-    'use strict';
-
 	angular.module('proteo.ui.buscador-contacto.filtro').service('filtroService', function () {
 
 	/*
@@ -95,8 +77,6 @@
 	      this.getBasePath = function() { return basePath;}
 	      */
 	  });
-
-}());
 /* END Buscador-Contacto.FILTRO SERVICE */
 
 angular.module('proteo.ui.buscador-contacto.filtro').run(['$templateCache', function($templateCache) {
