@@ -10,8 +10,8 @@ module.exports = function(grunt) {
 	    		'src/**/*-directive.js',
 		    	'src/**/*-service.js',
 		    	'src/**/*-filter.js',
-		    	'src/bower_components/**/*.js',
-		    	'dist/<%= pkg.name %>-dist.js'
+		    	'dist/<%= pkg.name %>-dist.js',
+		    	'src/bower_components/**/*.js'
 		    ],
 		    dest: 'dist/<%= pkg.name %>-dist.js',
 		  }
@@ -19,9 +19,7 @@ module.exports = function(grunt) {
 		compass: {                  		// Task
 			dist: {                  	 	// Target
 				options: {              	// Target options
-					sassDir: 'src',
-					cssDir: 'styles',
-					environment: 'production'
+					config: 'compass_config.rb'
 				}
 			}
 		},
@@ -39,14 +37,14 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true, 
-						src: ['styles/**'], 
+						src: ['images/**'], 
 						dest: 'dist'
 					}
 				]
 			}
 		},		
 		ngtemplates:  {
-			"proteo.ui.buscador-contacto.filtro":
+			"proteo.ui.buscador-contacto":
 			{
 				src:      'src/**/*.html',
 				dest:     'dist/<%= pkg.name %>-dist.js'
@@ -77,30 +75,33 @@ module.exports = function(grunt) {
 				src: 'src/*.js',
 				dest: 'dist/<%= pkg.name %>-dist.min.js'
 			},
-	    }
+	    },
+		clean: ["dist"]
 	});
 
   	grunt.loadNpmTasks('grunt-angular-templates');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-compass');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', [
+		'clean',
 		'ngtemplates',
 		'concat',
 		'compass',
-		'uglify',
 		'copy',
+		'uglify',
 		'watch'
 	]);
 	grunt.registerTask('dist', [
-		'concat',
 		'ngtemplates',
+		'concat',
 		'compass',
-		'uglify',
 		'copy',
+		'uglify',
 		'watch'
 	]);
 };
